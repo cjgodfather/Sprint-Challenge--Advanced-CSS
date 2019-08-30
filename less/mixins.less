@@ -1,1 +1,26 @@
 // Mixins Here
+
+.display-class {
+  display: flex;
+}
+
+.width-class {
+  width: 100%;
+}
+
+.btn(@bgColor, @color, @size) {
+  font-size: @size;
+  background-color: @bgColor;
+  color: @color;
+  font-weight: bold;
+  width: 30%;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 3%;
+
+  &:hover {
+    color: @bgColor;
+    background-color: @color;
+  }
+}
